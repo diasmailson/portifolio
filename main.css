@@ -73,7 +73,7 @@ nav {
     margin: 5px 0;
     background: linear-gradient(
         135deg,
-        rgba(249, 105, 14, 1) 0%,
+        rgba(0, 255, 39, 1) 0% 0%,
         rgb(255, 255, 255) 100%
     );
 }
@@ -84,7 +84,7 @@ height: 3px;
 margin: 5px 0;
 background: linear-gradient(
         135deg,
-        rgba(249, 105, 14, 1) 0%,
+        rgba(0, 255, 39, 1) 0% 0%,
         rgb(255, 255, 255) 100%
     );
 
@@ -97,7 +97,7 @@ background: linear-gradient(
     margin-left: 15px;
     background: linear-gradient(
         135deg,
-        rgba(249, 105, 14, 1) 0%,
+        rgba(0, 255, 39, 1) 0%,
         rgb(255, 255, 255) 100%
     );
 }
@@ -153,7 +153,8 @@ margin:1.5rem 0;
 }
 
 .nav-link:hover {
-    color: rgba(249, 105, 14, 1);
+    /*color: rgba(249, 105, 14, 1);*/
+    color: rgba(0, 255, 39, 1);
 }
 
 .nav-list.active{
