@@ -131,7 +131,7 @@ margin:1.5rem 0;
     background-color: #222222 0.2;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -26rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,7 +145,7 @@ margin:1.5rem 0;
 }
 
 .nav-link {
-    opacity: 1;
+    opacity: 0;
     font-size: 1.3rem;
     text-transform: uppercase;
     color: #cecece;
@@ -160,4 +160,30 @@ margin:1.5rem 0;
     right: 0;
 }
 
+.toggle {
+    background: none;
+}
 
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px) scaleX(2);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px) scaleX(2);
+    margin-left: 0px;
+}
+
+@keyframes navLinkAnimate{
+    from{
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
