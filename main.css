@@ -6,7 +6,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: inherit;
 }
 
 html {
@@ -37,9 +37,13 @@ img {
   height: auto;
 }
 
+section {
+  padding: 2rem 0;
+}
+
 /* header */
 header {
-  width: 90%;
+  width: 100%;
   height: 5rem;
   position: absolute;
   top: 0;
@@ -134,7 +138,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: start;
   z-index: 998;
   transition: all 650ms ease-in-out;
 }
@@ -220,10 +224,10 @@ nav {
   font-weight: 400;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 5s steps(25), blink 1s ease-in-out 7s infinite;
-  width: 25ch;
+  animation: typing 5s steps(23), blink 1s ease-in-out 7s infinite;
+  width: 27ch;
   margin: auto;
-  border-right: 4px solid rgba(255, 255, 255, 0);
+  border-right: 4px solid rgba(255, 255, 255, 1);
 }
 
 @keyframes typing {
@@ -246,7 +250,7 @@ nav {
 }
 
 .main-message h3 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 1rem 0;
   color: rgba(0, 255, 39, 1);
   color: rgba(0, 255, 39, 1);
@@ -275,9 +279,9 @@ nav {
   background: rgb(3, 155, 155);
   border-radius: 2rem;
   color: #fafafa;
-  padding: 1rem 2.5rem;
   display: inline-block;
   margin-top: 2rem;
+  padding: 1rem 2.5rem;
   transition: background-color 650ms;
   font-weight: 500;
   letter-spacing: 2px;
@@ -299,40 +303,42 @@ nav {
   color: rgba(0, 255, 39, 0.5);
 }
 
-/*About Page*/
-.about {
+/*Sobre Page*/
+.sobre {
   width: 100%;
   min-height: 100vh;
   max-width: 70rem;
   margin: auto;
 }
 
-.about .container {
+.sobre .container {
   display: flex;
+  /*flex-direction: column;*/
   align-items: center;
   min-height: 80vh;
+  /*margin-top: 7rem;*/
 }
 
-.about-img img {
+.sobre-img img {
   height: 12rem;
   width: auto;
   border-radius: 50%;
-  margin: 2rem;
+  margin: 1rem;
   box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);
 }
 
-.about-text-box {
+.sobre-text-box {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
 }
 
-.about-text-box h2 {
+.sobre-text-box h2 {
   font-size: 4rem;
   margin-bottom: 20px;
 }
 
-.about-text-box p {
+.sobre-text-box p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
   padding: 0;
@@ -376,22 +382,22 @@ hr {
 
 .service-tiers {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minimax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2.5rem;
 }
 
 .tier-item {
-  height: 20rem;
+  height: 30rem;
   padding: 2rem;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   cursor: default;
 }
 
 .tier-item i {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .tier-item h2 {
@@ -408,5 +414,55 @@ hr {
 
 .tier-item p {
   font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+}
+
+/*Projects*/
+.projects {
+  padding: 3rem 0;
+  min-height: 100vh;
+  max-width: 70rem;
+  margin: auto;
+}
+
+.has-margin-right {
+  margin: 0 3rem 0 0;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1.45rem 5rem 1.45rem;
+}
+
+.project-img {
+  flex: 1;
+}
+
+.project-description {
+  flex: 1;
+}
+
+.project-description h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 255, 39, 1) 0%,
+    rgba(6, 99, 156, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-description p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+}
+
+.project-link {
+  display: inline-block;
+  margin: 2rem 0;
   font-size: 1.4rem;
 }
