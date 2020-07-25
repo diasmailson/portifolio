@@ -18,6 +18,10 @@ html {
   background-color: rgb(19, 19, 19);
 }
 
+a:hover {
+  color: yellow;
+}
+
 a {
   text-decoration: none;
   color: rgb(3, 155, 155);
@@ -469,28 +473,33 @@ hr {
 }
 
 /*Contact*/
-.contact{
+.contact {
   width: 100%;
   min-height: 100vh;
   max-width: 70rem;
   margin: auto;
+  padding-top: 5rem;
 }
 
-.contact h2{
+.contact a {
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 5rem;
 }
 
-.contact p{
+.contact p {
   text-align: center;
-  font-family: "Poppins, sans serif";
+  font-family: 'Poppins, sans serif';
   font-size: 1.4rem;
   padding: 0;
   margin: 0.9rem 2rem;
 }
 
-.contact .container{
+.contact .container {
   min-height: 50vh;
   display: flex;
   justify-content: space-evenly;
@@ -498,3 +507,22 @@ hr {
 }
 
 /*Footer*/
+footer {
+  width: 100%;
+  max-width: 70rem;
+  margin: auto;
+  padding: 2.5rem;
+  color: #8a8a8a;
+  text-align: center;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+footer a {
+  margin: 0 0.2rem;
+}
+
+/*Responsive*/
+
