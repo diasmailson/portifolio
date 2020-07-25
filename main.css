@@ -438,6 +438,7 @@ hr {
 
 .project-img {
   flex: 1;
+  margin: auto;
 }
 
 .project-description {
@@ -457,7 +458,7 @@ hr {
 }
 
 .project-description p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
 }
 
